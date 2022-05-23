@@ -115,7 +115,3 @@
     opacity: .5;
     cursor: default;
 }
-
-.btn-xs {
-    min-height: 5rem !important;
-}

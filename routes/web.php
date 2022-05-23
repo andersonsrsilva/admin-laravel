@@ -1,6 +1,6 @@
 <?php
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'HomeController@index');
 
 Route::group(['namespace' => 'Auth'], function () {
 
