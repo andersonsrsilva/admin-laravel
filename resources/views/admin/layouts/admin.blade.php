@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('body_class','nav-md')
-@include('admin.layouts.flash-messages')
 @section('page')
     <div class="container body">
         <div class="main_container">
@@ -13,6 +12,7 @@
             @yield('left-sidebar')
 
             <div class="right_col" role="main">
+                @include('admin.layouts.flash-messages')
                 @yield('content')
             </div>
 

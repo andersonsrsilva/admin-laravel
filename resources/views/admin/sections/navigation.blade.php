@@ -1,7 +1,7 @@
 <div class="col-md-3 left_col">
     <div class="left_col scroll-view">
         <div class="navbar nav_title" style="border: 0;">
-            <a href="{{ route('admin.dashboard') }}" class="site_title">
+            <a href="{{ route('admin.admin') }}" class="site_title">
                 <span>{{ config('app.name') }}</span>                
             </a>
         </div>
@@ -28,7 +28,7 @@
                 <h3>Geral</h3>
                 <ul class="nav side-menu">
                     <li>
-                        <a href="{{ route('admin.dashboard') }}">
+                        <a href="{{ route('admin.admin') }}">
                             <i class="fa fa-home" aria-hidden="true"></i>
                             Home
                         </a>

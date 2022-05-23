@@ -21,10 +21,8 @@ Route::group(['namespace' => 'Auth'], function () {
  */
 Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'middleware' => 'admin'], function () {
 
-    // Dashboard
-    Route::get('/', 'DashboardController@index')->name('dashboard');
+    Route::get('/', 'AdminController@index')->name('admin');
 
-    //Users
     Route::get('users', 'UserController@index')->name('users');
     Route::get('users/restore', 'UserController@restore')->name('users.restore');
     Route::get('users/{id}/restore', 'UserController@restoreUser')->name('users.restore-user');

@@ -46,15 +46,16 @@
                     <td>{{ $user->created_at }}</td>
                     <td>{{ $user->last_login }}</td>
                     <td>
-                        <a class="btn btn-xs btn-primary btn-icon" href="{{ route('admin.users.show', [$user->id]) }}" data-toggle="tooltip" data-placement="top" data-title="{{ __('views.admin.users.index.show') }}">
+                        <a class="btn btn-xs btn-primary btn-icon" href="{{ route('admin.users.show', [$user->id]) }}" title="Mostrar">
                             <i class="fa fa-eye"></i>
                         </a>
-                        <a class="btn btn-xs btn-info btn-icon" href="{{ route('admin.users.edit', [$user->id]) }}" data-toggle="tooltip" data-placement="top" data-title="{{ __('views.admin.users.index.edit') }}">
+                        <a class="btn btn-xs btn-info btn-icon" href="{{ route('admin.users.edit', [$user->id]) }}" title="editar">
                             <i class="fa fa-pencil"></i>
                         </a>
                         @if(!$user->hasRole('administrator'))
                             <a href="" 
                                 class="btn btn-xs btn-danger btn-icon" 
+                                title="Excluir"
                                 data-toggle="modal"
                                 data-target="#delete"
                                 data-id="{{$user->id}}"

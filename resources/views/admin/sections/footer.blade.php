@@ -1,4 +1,4 @@
 <div class="pull-right">
-    &copy; {{ date('Y') }} {{ config('app.name') }}. {{ __('views.backend.section.footer.copyright') }}
+    &copy; {{ date('Y') }} {{ config('app.name') }}. Todos os direitos estão reservados.
 </div>
 <div class="clearfix"></div>

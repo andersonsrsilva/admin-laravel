@@ -10,23 +10,14 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Routing\Route;
 
-class DashboardController extends Controller
+class AdminController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
+
     public function __construct()
     {
         $this->middleware('auth');
     }
 
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
         $counts = [
@@ -42,7 +33,7 @@ class DashboardController extends Controller
             }
         }
 
-        return view('admin.dashboard', ['counts' => $counts]);
+        return view('admin.admin', ['counts' => $counts]);
     }
 
 
