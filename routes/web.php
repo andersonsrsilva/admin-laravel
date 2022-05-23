@@ -2,15 +2,6 @@
 
 Route::get('/', 'WelcomeController@index');
 
-/**
- * Membership
- */
-Route::group(['as' => 'protection.'], function () {
-    Route::get('membership', 'MembershipController@index')->name('membership')->middleware('protection:' . config('protection.membership.product_module_number') . ',protection.membership.failed');
-    Route::get('membership/access-denied', 'MembershipController@failed')->name('membership.failed');
-    Route::get('membership/clear-cache/', 'MembershipController@clearValidationCache')->name('membership.clear_validation_cache');
-});
-
 Route::group(['namespace' => 'Auth'], function () {
 
     // Authentication Routes...
