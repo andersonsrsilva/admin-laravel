@@ -44,19 +44,6 @@
                                 Esqueceu a senha?
                             </a>
                         </div>
-
-                        <!-- <div class="clearfix"></div>
-
-                        @if(config('auth.users.registration'))
-                            <div class="separator">
-                                <p class="change_link">Não possui uma conta?
-                                    <a href="{{ route('register') }}" class="to_register">Criar uma conta</a>
-                                </p>
-
-                                <div class="clearfix"></div>
-                                <br/>
-                            </div>
-                        @endif -->
                     {{ Form::close() }}
                 </section>
             </div>
